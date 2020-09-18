@@ -1,0 +1,373 @@
+    @media all and (max-width:375px)
+    {
+      body{
+        padding:0px;
+        margin:0px;
+        background-color:  hsl(0, 100%, 98%);
+        font-family: 'Josefin Sans', sans-serif;
+      }
+
+      p{
+        padding:0;
+        margin:0;
+      }
+
+      h1{
+        padding:0;
+        margin:0;
+      }
+
+      .logo-mobile{
+        padding:20px 0px 20px 30px ;
+
+      }
+    
+      .caption{
+        width:100%;
+        height:auto;
+        max-width: 400px;
+        min-width: 228px;
+        
+      }
+
+      #hero-mobile{
+        max-width:100%;
+        height: auto;
+      
+      }
+
+      .caption-one{
+        padding-top:10px;
+        margin: 0;
+      }
+
+      .caption-one-l1{
+        color: hsl(0, 36%, 70%);
+        font-weight: 100;
+        padding-top:50px;
+      }
+
+      .caption-one-l2 , .caption-one-l3{
+        color:#423A3A;
+        font-weight: 500;
+      }
+      #big-word{
+        text-align: center;
+        font-size: 45px;
+        letter-spacing: 7px;
+        margin:0;
+      }
+      
+      .caption-two{
+        color: hsl(0, 36%, 70%);
+        line-height: 20px;
+        font-size: 15px;
+        padding:20px;
+        text-align: center;
+      }
+
+      
+      h1{
+        padding: 0;
+        margin:0;
+
+      }
+      .email-form{
+        padding:27px;
+        /*  padding-bottom: 50px; */
+        text-align: center;
+        color: hsl(0, 36%, 70%);
+        position: relative;
+      }
+
+
+      ::placeholder {
+        color: hsl(0, 36%, 70%);
+        opacity: 1; /* Firefox */
+      }
+
+
+      #email-box{
+        /* display: inline; */
+        height: 35px;
+        width:100%;
+        padding-left:15px;
+        border-radius: 30px;
+        background-color:  hsl(0, 100%, 98%);
+        outline:none;
+        border:1px solid hsl(0, 36%, 70%);
+        box-sizing: border-box;
+      
+      }
+
+      #email-box:focus{
+        border-radius:30px;
+        border:2px solid hsl(0, 93%, 68%);
+      }
+
+      #arrow{
+        position: absolute;
+        border-radius:30px;
+        width:17vw;
+        margin-left:-16%;
+        height:35px;
+        background-image:linear-gradient(to right,hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+        outline:none;
+        border:0;  
+        box-shadow: 0 7px 7px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);     
+          
+      }
+
+      #svg-arrow{
+        position: absolute;
+        margin-top:7px;
+        margin-left:-27px;
+        /* width:100%; */
+          
+      }
+
+      #error{
+        width:6vw;
+        position: absolute;
+        /* margin-top: -25px; */
+        margin-left:-25%;
+        padding-top: 7px  ; 
+      }
+
+      #l1{
+        color:hsl(0, 93%, 68%);
+        padding:10px;
+        padding-bottom: 30px;
+        font-size:10px;
+        display: block;
+        position: absolute;
+      }
+
+      #hero-desktop{
+        display: none;
+      }
+
+      .logo-desktop{
+        display: none;
+      }
+      #svg-logo-dektop{
+        display:none;
+      }
+    
+    }
+    
+    @media all and (min-width:376px)
+    {
+        * {
+            box-sizing: border-box;
+        }
+    
+        body {
+            margin:0;
+            padding:10vw;
+            /* background-color: peachpuff; */
+            font-family: 'Josefin Sans', sans-serif;
+            align-self: center;
+        }
+    
+        .column{
+            display: flex;
+            flex-direction: row-reverse;
+    
+          /* background-image: url("images/bg-pattern-desktop.svg"); */
+          
+        }
+    
+        .image{ 
+            overflow: hidden;
+            width:100%;
+            /* min-width: 50px; */
+            height:auto;
+            /* background-color: red; */
+        
+        }
+    
+        
+        #hero-desktop{
+            width: 100%;
+            /* min-height: 100px; */
+             /* height:100%; */
+            overflow: hidden;
+        }
+    
+    
+        .caption{
+    
+            width:100%;
+            height: auto;
+            max-height: min-content;
+            text-align: justify;
+            padding-left:10%;
+            overflow: hidden;
+            padding-right: 3vw;
+            background-image: url("images/bg-pattern-desktop.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+    
+        }
+    
+        .caption-one{
+            width:100%;
+            height:auto;
+            overflow: hidden;
+        }
+    
+        .caption-one-l1{
+            color: hsl(0, 36%, 70%);
+            font-weight: 50;
+            padding-top:6vw;
+        }
+    
+        .caption-one-l2 , .caption-one-l3{
+            color:#423A3A;
+            font-weight: 500;
+            padding-top:0.5vw;
+            
+        }
+        #big-word{
+    
+            font-size: 3.5vw;
+            letter-spacing: 8px;
+        
+        }
+    
+        .crt-align{
+            padding-right:7%;
+            width:100%;
+            padding-bottom: 10%;
+        }
+    
+        .caption-two{
+            width:80%;
+            height:auto;
+            color: hsl(0, 36%, 70%);
+            line-height: 1.5vw;
+            font-weight: 400;
+            font-size:0.9vw;
+            padding-top:1vw;
+            text-align: left;
+            overflow: hidden;
+        }
+        
+    
+        #hero-mobile{
+            display: none;
+        }
+    
+       
+        .email-form{
+            padding-top:3vh;    
+            
+            text-align: justify;
+            color: hsl(0, 36%, 70%);
+            position: relative;
+        }
+    
+    
+        ::placeholder {
+            color: hsl(0, 36%, 70%);
+            opacity: 1; /* Firefox */
+            /* width:50%; */
+            font-size: 1vw;
+        }
+    
+    
+        #email-box{
+            height:3vw;
+            width:80%;  
+            padding-left:15px;
+            border-radius: 30px;
+            background-color:  hsl(0, 100%, 98%);
+            outline:none;
+            border:1px solid hsl(0, 36%, 70%);
+            box-sizing: border-box;
+          
+        }
+        
+       
+    
+        #email-box:focus{
+            border-radius:30px;
+            border:2px solid hsl(0, 93%, 68%);
+        }
+    /* 
+        .button{
+            margin-left:-19%;
+            border-radius:2vw;
+            height:3vw;
+            width:6vw;
+            position: absolute;
+            box-shadow: 0 7px 7px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            background-image:linear-gradient(to right,hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+            outline:none;
+            border:0;
+            
+        } */
+    
+    
+        #arrow{
+            width:20%;
+            height: 3vw;
+            
+            margin-left:-19%;
+            border-radius:2vw;
+            height:3vw;
+            width:6vw;
+            position: absolute;
+            box-shadow: 0 7px 7px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+            background-image:linear-gradient(to right,hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+            outline:none;
+            border:0;
+                        
+        }
+    
+        #svg-arrow{
+            position: absolute;
+            width:100%;
+            margin-left:-3vw;
+            margin-top:0.5vw;
+               
+        }
+    
+        #error{
+            width:2vw;
+            height: auto;
+            position: absolute;
+            margin-left:-28%;
+            padding-top: 2%  ; 
+        }
+    
+        
+        #l1{
+            position: absolute;
+            color:hsl(0, 93%, 68%);
+            padding:10px;
+            padding-bottom: 30px;
+            font-size:1vw;
+            display: block;
+            
+          }
+         
+        .logo-desktop{
+            padding-top:5vw;
+        }
+    
+        #svg-logo-desktop{
+            width:30vw;
+        }
+    
+    
+    
+        
+    }
+    
+    
+    
+        
+    

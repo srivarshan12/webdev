@@ -1,162 +1,165 @@
-    @media all and (max-width:375px)
-    {
-      body{
-        padding:0px;
-        margin:0px;
-        background-color:  hsl(0, 100%, 98%);
-        font-family: 'Josefin Sans', sans-serif;
-      }
+@media all and (max-width:426px)
+{
+  body{
+    padding:0px;
+    margin:0px;
+    background-color:  hsl(0, 100%, 98%);
+    font-family: 'Josefin Sans', sans-serif;
+  }
 
-      p{
-        padding:0;
-        margin:0;
-      }
+  p{
+    padding:0;
+    margin:0;
+  }
 
-      h1{
-        padding:0;
-        margin:0;
-      }
+  h1{
+    padding:0;
+    margin:0;
+  }
 
-      .logo-mobile{
-        padding:20px 0px 20px 30px ;
+  .logo-mobile{
+    padding:20px 0px 20px 30px ;
 
-      }
+  }
+
+  .caption{
+    width:100%;
+    height:auto;
+    /* max-width: 400px; */
+    min-width: 247px;
     
-      .caption{
-        width:100%;
-        height:auto;
-        max-width: 400px;
-        min-width: 228px;
-        
-      }
+  }
 
-      #hero-mobile{
-        max-width:100%;
-        height: auto;
+  #hero-mobile{
+    width:100%;
+    height: auto;
+  
+  }
+
+  .caption-one{
+    padding-top:10px;
+    margin: 0;
+  }
+
+  .caption-one-l1{
+    color: hsl(0, 36%, 70%);
+    font-weight: 100;
+    padding-top:50px;
+  }
+
+  .caption-one-l2 , .caption-one-l3{
+    color:#423A3A;
+    font-weight: 500;
+  }
+  #big-word{
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 7px;
+    margin:0;
+  }
+  
+  .caption-two{
+    color: hsl(0, 36%, 70%);
+    line-height: 20px;
+    font-size: 15px;
+    padding:20px;
+    text-align: center;
+  }
+
+  
+  h1{
+    padding: 0;
+    margin:0;
+
+  }
+  .email-form{
+    padding:27px;
+    /*  padding-bottom: 50px; */
+    text-align: center;
+    color: hsl(0, 36%, 70%);
+    position: relative;
+  }
+
+
+  ::placeholder {
+    color: hsl(0, 36%, 70%);
+    opacity: 1; /* Firefox */
+  }
+
+
+  #email-box{
+    /* display: inline; */
+    height:35px;
+    width:100%;
+    padding-left:15px;
+    border-radius: 30px;
+    background-color:  hsl(0, 100%, 98%);
+    outline:none;
+    border:1px solid hsl(0, 36%, 70%);
+    box-sizing: border-box;
+  
+  }
+
+  #email-box:focus{
+    border-radius:30px;
+    border:2px solid hsl(0, 93%, 68%);
+  }
+
+  #arrow{
+    position: absolute;
+    border-radius:30px;
+    width:17vw;
+    min-width:40px;
+    margin-left:-17%;
+    height:35px;
+    background-image:linear-gradient(to right,hsl(0, 36%, 70%), hsl(0, 93%, 68%));
+    outline:none;
+    border:0;  
+    box-shadow: 0 7px 7px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);     
       
-      }
+  }
 
-      .caption-one{
-        padding-top:10px;
-        margin: 0;
-      }
-
-      .caption-one-l1{
-        color: hsl(0, 36%, 70%);
-        font-weight: 100;
-        padding-top:50px;
-      }
-
-      .caption-one-l2 , .caption-one-l3{
-        color:#423A3A;
-        font-weight: 500;
-      }
-      #big-word{
-        text-align: center;
-        font-size: 45px;
-        letter-spacing: 7px;
-        margin:0;
-      }
+  #svg-arrow{
+    position: absolute;
+    margin-top:7px;
+    margin-left:-9vw;
+    text-align: center;
+    /* width:100%; */
       
-      .caption-two{
-        color: hsl(0, 36%, 70%);
-        line-height: 20px;
-        font-size: 15px;
-        padding:20px;
-        text-align: center;
-      }
+  }
 
-      
-      h1{
-        padding: 0;
-        margin:0;
+  #error{
+    width:6vw;
+    position: absolute;
+    /* margin-top: -25px; */
+    margin-left:-25%;
+    padding-top: 7px  ; 
+  }
 
-      }
-      .email-form{
-        padding:27px;
-        /*  padding-bottom: 50px; */
-        text-align: center;
-        color: hsl(0, 36%, 70%);
-        position: relative;
-      }
+  #l1{
+    color:hsl(0, 93%, 68%);
+    padding:10px;
+    padding-bottom: 30px;
+    font-size:10px;
+    display: block;
+    position: absolute;
+  }
 
+  #hero-desktop{
+    display: none;
+  }
 
-      ::placeholder {
-        color: hsl(0, 36%, 70%);
-        opacity: 1; /* Firefox */
-      }
+  .logo-desktop{
+    display: none;
+  }
+  #svg-logo-dektop{
+    display:none;
+  }
 
-
-      #email-box{
-        /* display: inline; */
-        height: 35px;
-        width:100%;
-        padding-left:15px;
-        border-radius: 30px;
-        background-color:  hsl(0, 100%, 98%);
-        outline:none;
-        border:1px solid hsl(0, 36%, 70%);
-        box-sizing: border-box;
-      
-      }
-
-      #email-box:focus{
-        border-radius:30px;
-        border:2px solid hsl(0, 93%, 68%);
-      }
-
-      #arrow{
-        position: absolute;
-        border-radius:30px;
-        width:17vw;
-        margin-left:-16%;
-        height:35px;
-        background-image:linear-gradient(to right,hsl(0, 36%, 70%), hsl(0, 93%, 68%));
-        outline:none;
-        border:0;  
-        box-shadow: 0 7px 7px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);     
-          
-      }
-
-      #svg-arrow{
-        position: absolute;
-        margin-top:7px;
-        margin-left:-27px;
-        /* width:100%; */
-          
-      }
-
-      #error{
-        width:6vw;
-        position: absolute;
-        /* margin-top: -25px; */
-        margin-left:-25%;
-        padding-top: 7px  ; 
-      }
-
-      #l1{
-        color:hsl(0, 93%, 68%);
-        padding:10px;
-        padding-bottom: 30px;
-        font-size:10px;
-        display: block;
-        position: absolute;
-      }
-
-      #hero-desktop{
-        display: none;
-      }
-
-      .logo-desktop{
-        display: none;
-      }
-      #svg-logo-dektop{
-        display:none;
-      }
+}
     
-    }
-    
-    @media all and (min-width:376px) and (max-width:1440px)
+    @media all and (min-width:427px) and (max-width:1440px)
+
     {
         * {
             box-sizing: border-box;

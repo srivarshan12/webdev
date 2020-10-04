@@ -157,8 +157,9 @@
   }
 
 }
-
+    
     @media all and (min-width:427px) and (max-width:1440px)
+
     {
         * {
             box-sizing: border-box;

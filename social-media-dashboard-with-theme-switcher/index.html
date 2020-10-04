@@ -1,0 +1,257 @@
+..<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- <link rel="stylesheet" href="styles-laptop.css"> -->
+  <!-- <link rel="stylesheet" href="styles-laptop1.css"> -->
+  <!-- <link rel="stylesheet" href="styles-mobile.css"> -->
+  <link rel="stylesheet" href="styles-new.css">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <style>
+    body{
+      background-color:hsl(0,0%,100%); 
+      /* background-color: hsl(230, 17%, 14%);     */
+    }
+    
+    .blue-box{
+      background-color: hsl(227, 47%, 96%);
+      /* background-color:hsl(228, 28%, 20%); */
+    }
+    
+    .smd{
+      background-color:  hsl(225, 100%, 98%);
+      /* background-color: hsl(232, 19%, 15%); */
+    }
+    
+    #id-name,#one,#total-followers,#mode{
+      color:hsl(228, 12%, 44%);
+      /* color:hsl(228, 34%, 66%); */
+    }
+    
+    #hr-tag{
+      border: 0.2px solid hsl(228, 34%, 66%);
+    }
+    
+    #heading,#followers-no , #three {
+      color:hsl(230, 17%, 14%);
+      /* color:hsl(0,0%,100%); */
+    }
+    
+    .second-container{
+    color:hsl(228, 12%, 44%);
+    /* color:hsl(230, 17%, 14%); */
+    }
+    
+  </style>
+</head>
+<body>
+
+
+<div class="col-12 smd">
+<div class="content">
+  <div class="left-side">
+    <p id="heading">Social Media Dashboard</p>
+    <p id="total-followers">Total Followers: 23,004</p>
+    <hr id="hr-tag">
+  </div>
+
+  <div class="right-side">
+    <!-- <p id="mode">Dark Mode</p> -->
+    <p id="mode">Light Mode</p>
+    
+  </div>
+</div>
+</div>
+
+
+<div class="whole-container">
+  <div class="container-1">
+
+    <div class=" col-2 first-box  blue-box" >
+      <span id="id-name">
+        <img src="images/icon-facebook.svg" id="icon" alt="facebook-icon" >
+        <p style="display:inline;">@nathanf</p>
+      </span>
+      <p id="followers-no">1987</p>
+      <p id="followers">Followers</p>
+      <span class="today" id="up">
+        <img src="images/icon-up.svg" alt="up-icon">
+        <p style="display:inline">12 Today</p>
+      </span>
+    </div>
+
+    <div class="col-2 second-box  blue-box">
+      <span id="id-name" > 
+        <img src="images/icon-twitter.svg" id="icon" alt="twitter-icon">
+        <p  style="display:inline">@nathanf</p>
+      </span>
+      <p id="followers-no">1044</p>
+      <p id="followers">Followers</p>
+      <span class="today" id="up">
+        <img src="images/icon-up.svg" alt="up-icon">
+        <p style="display:inline">99 Today</p>
+      </span>
+    </div>
+
+    <div class=" col- third-box  blue-box">
+      <span id="id-name" >
+        <img src="images/icon-instagram.svg" id="icon" alt="instagram-icon">
+        
+        <p  style="display:inline">@realnathanf</p>
+      </span>  
+      <p id="followers-no">11k</p>  
+      <p id="followers">Followers</p> 
+      <span class="today" id="up">
+        <img src="images/icon-up.svg" alt="up-icon">
+        <p style="display:inline">1099 Today</p>
+      </span>
+    </div>
+
+    <div class="col-3 fourth-box blue-box">
+      <span id="id-name">
+        <img src="images/icon-youtube.svg" id="icon" alt="youtube-icon">
+        <p  style="display:inline">Nathan F.</p>
+      </span>
+      <p id="followers-no">8239</p>
+      <p id="followers">Subscribers</p>
+      <span class="today" id="down">
+        <img src="images/icon-down.svg" alt="down-icon">
+        <p style="display:inline">144 Today</p>
+      </span>
+    </div>
+  </div>
+
+
+  <div class="second-container">
+    Overview - Today
+  </div>
+
+
+  <div class="third-container">
+    <div class="blue-box">
+      <div class="first-row" ">
+        <p id="one" >Page Views</p>
+        <img src="images/icon-facebook.svg" alt="facebook-icon" id="two">
+      </div>
+      <div class="second-row">
+        <p id="three">87</p>
+        <span class="today four"id="up-2">
+          <img src="images/icon-up.svg" alt="up-icon">
+          <p>3%</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Likes</p>
+        <img src="images/icon-facebook.svg" alt="facebook-icon" id="two">
+      </div>
+      <div class="second-row" >
+        <p id="three">52</p>
+        <span class="today four"id="down-2">
+        <img src="images/icon-down.svg" alt="down-icon">
+          <p>2%</p>
+        </span>
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Likes</p>
+        <img src="images/icon-instagram.svg" id="two" alt="instagram-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">5462</p>
+        <span class="today four"id="up-2">
+          <img src="images/icon-up.svg" alt="up-icon">
+            <p>2257%</p>
+          </span>
+      </div>  
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Profile Views</p>
+        <img src="images/icon-instagram.svg" id="two" alt="instagram-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">52k</p>
+
+        <span class="today four"id="up-2">
+          <img src="images/icon-up.svg" alt="up-icon">
+            <p>1475%</p>
+          </span>
+        
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Retweets</p>
+        <img src="images/icon-twitter.svg" id="two" alt="twitter-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">117</p>
+        <span class="today four"id="up-2">
+          <img src="images/icon-up.svg" alt="up-icon">
+            <p>303%</p>
+          </span>
+        
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Likes</p>
+        <img src="images/icon-twitter.svg" id="two" alt="twitter-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">507</p>
+        <span class="today four"id="up-2">
+          <img src="images/icon-up.svg" alt="down-icon">
+            <p>553%</p>
+          </span>
+        
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div class="first-row" >
+        <p id="one">Likes</p>
+        <img src="images/icon-youtube.svg" id="two" alt="youtube-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">107</p>
+        <span class="today four"id="down-2">
+          <img src="images/icon-down.svg" alt="down-icon">
+            <p>19%</p>
+          </span>
+        
+      </div>
+    </div>
+
+    <div class="blue-box">
+      <div 
+      class="first-row" >
+        <p id="one">Total Views</p>
+        <img src="images/icon-youtube.svg" id="two" alt="youtube-icon">
+      </div>
+      <div class="second-row">
+        <p id="three">1407</p>
+        <span class="today four"id="down-2">
+          <img src="images/icon-down.svg" alt="down-icon">
+            <p>12%</p>
+          </span>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

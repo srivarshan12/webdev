@@ -1,71 +1,36 @@
-..<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-- <link rel="stylesheet" href="styles.css"> -->
-  <!-- <link rel="stylesheet" href="styles-laptop.css"> -->
-  <!-- <link rel="stylesheet" href="styles-laptop1.css"> -->
-  <!-- <link rel="stylesheet" href="styles-mobile.css"> -->
-  <link rel="stylesheet" href="styles-new.css">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-  <style>
-    body{
-      background-color:hsl(0,0%,100%); 
-      /* background-color: hsl(230, 17%, 14%);     */
-    }
-    
-    .blue-box{
-      background-color: hsl(227, 47%, 96%);
-      /* background-color:hsl(228, 28%, 20%); */
-    }
-    
-    .smd{
-      background-color:  hsl(225, 100%, 98%);
-      /* background-color: hsl(232, 19%, 15%); */
-    }
-    
-    #id-name,#one,#total-followers,#mode{
-      color:hsl(228, 12%, 44%);
-      /* color:hsl(228, 34%, 66%); */
-    }
-    
-    #hr-tag{
-      border: 0.2px solid hsl(228, 34%, 66%);
-    }
-    
-    #heading,#followers-no , #three {
-      color:hsl(230, 17%, 14%);
-      /* color:hsl(0,0%,100%); */
-    }
-    
-    .second-container{
-    color:hsl(228, 12%, 44%);
-    /* color:hsl(230, 17%, 14%); */
-    }
-    
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="style/styles.css">
+
 </head>
 <body>
-
-
+<div class="body">
 <div class="col-12 smd">
 <div class="content">
   <div class="left-side">
     <p id="heading">Social Media Dashboard</p>
     <p id="total-followers">Total Followers: 23,004</p>
-    <hr id="hr-tag">
+    <hr id="hr-tag" style="border: 0.2px solid hsl(228, 34%, 66%);">
   </div>
 
   <div class="right-side">
-    <!-- <p id="mode">Dark Mode</p> -->
-    <p id="mode">Light Mode</p>
-    
+    <div class="mode">
+     <p id="mode">Dark Mode</p>
+    </div>
+      <div class="toggle-btn">
+      <input class="container_toggle" type="checkbox" id="switch" name="mode">
+      <label for="switch">Toggle</label>
+    </div>
+      
+    </div>
   </div>
 </div>
-</div>
+
 
 
 <div class="whole-container">
@@ -252,6 +217,31 @@
     </div>
   </div>
 </div>
+</div>
 
+<script type="text/javascript">
+   var checkbox = document.querySelector('input[name=mode]');
+
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                 var element = document.body;
+                element.classList.toggle("dark-mode");
+            } else {
+                trans()
+               var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        })
+
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition');
+            }, 1000)
+        }
+
+
+</script>
 </body>
 </html>

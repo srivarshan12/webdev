@@ -215,7 +215,9 @@ body {
 		height: auto;
 		padding-top: 15px;
 		font-weight: bold;
+		
 	}
+	
 
 	#followers-no {
 		padding-top: 20px;
@@ -230,8 +232,14 @@ body {
 		font-weight: bold;
 	}
 
+	.today {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 	#up {
 		padding-top: 15px;
+		/* padding-right:51px; */
 		font-size: 15px;
 		font-weight: 1000;
 		color: #1db489;

@@ -1,0 +1,422 @@
+@media screen and (min-width:426px)
+{
+    body{
+    padding:0px;
+    margin:0px;
+    font-family: 'Spartan', sans-serif;
+    }
+   
+    img{
+    display: block;
+    }
+
+    a{
+    text-decoration: none;
+    }
+
+    .upperbox{
+    display:flex;
+    flex-direction: row;
+    }
+
+
+    .navbar{
+    /* background-color: blue; */
+    margin:7%;
+    position:absolute;
+    float:left;
+    text-transform: lowercase;
+    }
+
+    .navbar a {
+    color:white;
+    padding:15px 15px 10px 15px;
+    font-size:13px;
+    text-align: center;
+    }
+
+    a.middle{
+    position: relative;
+    }
+
+    a.middle:before{
+    content:"";
+    position: absolute;
+    width:30%;
+    height:2px;
+    bottom:0;
+    left:33%;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    }
+
+    a.middle:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+    }
+    
+    .navitems{
+        display: inline;
+    }
+
+    #hamburgericon,#closeicon{
+        display:none;
+    }
+
+    #room{
+    /* font-size: 23px; */
+    color:white;
+    padding-right:40px;
+    text-align: center;
+    display: inline;
+    }
+
+    #bg-img1{
+    position: relative;
+    width:66%;
+    height:auto;
+    float: right;
+    background-image: url("images/desktop-image-hero-0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease-in;
+    }
+
+    .textbox1{
+    width: 34%;
+    position: relative;
+    text-align: left;
+    padding:90px 80px 125px 80px;
+    transition: all 0.3s ease-in;
+    }
+
+    .textbox1 p:nth-child(1){
+    font-size: 35px;
+    font-weight: bold;
+    color:hsl(0, 0%, 27%);
+    }
+ 
+    .textbox1 p:nth-child(2){
+    line-height: 17px;
+    font-size: 12px;
+    color:hsl(0, 0%, 63%);
+    }
+
+    .container{
+    margin:20px 0px 0px 0px;
+    }
+
+    .container a{
+    margin-right: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 13px;
+    float: left;
+    color:hsl(0, 0%, 0%);
+    }
+
+    .container a:hover{
+        color:hsl(0, 0%, 63%);    
+    }
+
+
+    #arrow{
+    padding:40px;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    background-size: 15px 25px;
+    outline: none;
+    border: none;
+    bottom:0;
+    position: absolute;
+    transition: all 0.3s ease-in;
+    }
+
+    #arrow:hover{
+    background-color: hsl(0, 0%, 27%);
+    cursor: pointer;   
+    }
+
+    .leftarrow{
+    background-image: url("images/icon-angle-left.svg");
+    left:0;
+    }
+ 
+    .rightarrow{
+    background-image: url("images/icon-angle-right.svg");
+    left:80px;    
+    }
+ 
+    .leftmobilearrow, .rightmobilearrow{
+        display: none;
+    }
+ 
+    .lowerbox{
+    display:flex;
+    flex-direction: row;
+    }
+ 
+    #bg-img2{
+    width:32%;
+    background-color: blue;
+    background-image: url("images/image-about-dark.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    #bg-img2 img{
+    max-width: 100%;
+    height: auto;
+    }
+
+    .textbox2{
+    width:35%;
+    padding: 60px 50px 60px 50px;
+    text-align: left;
+    }
+
+    .textbox2 p:nth-child(1){
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color:hsl(0, 0%, 0%);
+    }
+
+    .textbox2 p:nth-child(2){
+    font-size: 10px;
+    color:hsl(0, 0%, 63%);
+    line-height: 17px;
+    }
+ 
+    #bg-img3{
+    width:32%;
+    background-color: blueviolet;
+    background-image: url("images/image-about-light.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    }
+
+ 
+}
+
+
+@media screen and (max-width:376px)
+{
+    body{
+    padding:0px;
+    margin:0px;
+    font-family: 'Spartan', sans-serif;
+    }
+
+    img{
+    display: block;
+    max-width:100%;
+    height:auto;
+    }
+
+    a{
+    text-decoration: none;
+    }
+
+    .upperbox{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .navitems{
+        position: absolute;
+        width: 100%;
+        left:-100%;
+        padding-top: 9vw;
+        padding-bottom: 9vw;
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        background-color: white;
+        opacity: 1;
+        transition:all 0.3s ease-in-out;     
+    }
+
+    #closeicon{
+        /* background-color: blue; */
+        margin-left: 6%;
+        padding:10px;
+        
+        float: left;
+    }
+
+    .navitems a:nth-child(2){
+        margin-left: 3vw;
+    }
+    
+    .navitems a{
+        /* background-color: aqua; */
+        /* align-items: center; */
+        padding:10px;
+        color:black;
+        font-size:4vw;
+    }
+
+    
+
+
+    #bg-img1{
+        position: relative;
+        width:100vw;
+        height:96vw;
+        background-image: url("images/mobile-image-hero-1.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        transition: all 0.3s ease-in;
+        }
+
+    #hamburgericon{
+        /* z-index: 1; */
+        position: absolute;
+        top:12vw;
+        left:8%;
+    }
+
+    #room{
+        /* z-index: 2; */
+        position: absolute;
+        margin:0px;
+        color:white;
+        top: 10vw;
+        /* left:48%; */
+        right:43%;
+        margin:auto;
+        z-index: 0;
+        font-size: 1.5rem;
+        }
+
+    .textbox1{
+        margin:65px 35px 65px 35px;
+        transition: all 0.3s ease-in;
+    }
+    
+    .textbox1 p:nth-child(1){
+        margin:0px;
+        font-size: 1.7em;
+        font-weight: bold;
+        color:hsl(0, 0%, 0%);
+        }
+
+
+    .textbox1 p:nth-child(2){
+        line-height: 20px;
+        font-size: 0.7em;
+        font-weight: 100;
+        text-align: left;
+        color:hsl(0, 0%, 63%);
+        }
+
+    .container{
+        padding:30px 0px 0px 0px;
+        }
+    
+    .container a{
+        margin-right: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        font-size: 13px;
+        float: left;
+        color:hsl(0, 0%, 0%);
+        }
+    
+    .container a:hover{
+        color:hsl(0, 0%, 63%);    
+        }
+        
+    .leftdesktoparrow , .rightdesktoparrow{
+        display: none;
+    }
+
+    #arrow{
+        padding:30px;
+        background-repeat: no-repeat;
+        background-color:hsl(0, 0%, 0%);
+        background-position: center;
+        background-size: 10px 15px;
+        outline: none;
+        border: none;
+        bottom:0px;
+        position: absolute;
+        transition: all 0.3s ease-in;
+        }
+    
+    #arrow:hover{
+        background-color: hsl(0, 0%, 27%);
+        cursor: pointer;   
+        }
+    
+    .leftarrow{
+        background-image: url("images/icon-angle-left.svg");
+        right:60px; 
+        }
+
+    .rightarrow{
+        background-image: url("images/icon-angle-right.svg");
+        right:0px;    
+        }
+ 
+    .lowerbox{
+        display:flex;
+        flex-direction: column;
+        }
+         
+    #bg-img2{
+        /* width:100vw; */
+        height:64vw;
+        background-color: blue;
+        background-image: url("images/image-about-dark.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+    .textbox2{
+        padding: 50px 40px 50px 40px;
+        /* text-align: left; */
+        }
+    
+    .textbox2 p:nth-child(1){
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: bold;
+        color:hsl(0, 0%, 0%);
+        }
+    
+    .textbox2 p:nth-child(2){
+        font-size: 0.7em; 
+        line-height: 20px;
+        color:hsl(0, 0%, 63%);
+        
+        }
+
+    #bg-img3{
+        height:65vw;
+        background-color: blueviolet;
+        background-image: url("images/image-about-light.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        }
+    
+        
+                          
+    
+    
+
+}

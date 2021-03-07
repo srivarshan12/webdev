@@ -1,7 +1,6 @@
-<h1>My Projects</h1>
 <ul>
 
-<li>Article preview component: <a href="https://srivarshan12.github.io/myprojects/article-preview-component-master/index.html">view site</a></li>
+<li>Article preview component: <a href="https://srivarshan12.github.io/frontend-mentor/article-preview-component-master/">view site</a></li>
   
 <li>Base apparel coming soon:   <a href="https://myprojects-n06lu5ylf.vercel.app/">view site</a></li>
 

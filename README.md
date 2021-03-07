@@ -1,6 +1,6 @@
 # myprojects
 
-Article preview component: https://srivarshan12.github.io/myprojects/article-preview-component-master/index.html
+Article preview component: <a href="https://srivarshan12.github.io/myprojects/article-preview-component-master/index.html">Article preview component</a>
 
 Base apparel coming soon:   https://myprojects-n06lu5ylf.vercel.app/
 

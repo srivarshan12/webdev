@@ -1,4 +1,3 @@
-<h1>My Projects</h1>
 <ul>
 
 <li>Article preview component: <a href="https://srivarshan12.github.io/frontend-mentor/article-preview-component-master/">view site</a></li>

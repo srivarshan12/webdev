@@ -4,27 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="mobile.css">
   <title>Frontend Mentor | Loopstudios landing page</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 
 <body>
   <div class="topsection">
-    
-    <img src="images/logo.svg" alt="image-logo">
+    <div class="logorow">
+        <img src="images/logo.svg"  id="logo" alt="image-logo">
+        <img src="images/icon-hamburger.svg" id="hamburger" alt="image-hamburger">
+    </div>
     <nav class="navbar">
-      <a href="" class="topmiddle">About</a>
-      <a href="" class="topmiddle">Careers</a>
-      <a href="" class="topmiddle">Events</a>
-      <a href="" class="topmiddle">Products</a>
-      <a href="" class="topmiddle">Support</a>
+      <!-- <a href="" class="middle">About</a>
+      <a href="" class="middle">Careers</a>
+      <a href="" class="middle">Events</a>
+      <a href="" class="middle">Products</a>
+      <a href="" class="middle">Support</a> -->
     </nav>  
     <header class="heading">
       <p class="caps">Immersive experiences that deliver</p>
@@ -34,7 +32,7 @@
   <div class="container">
 
     <section class="middlesection">
-      <img src="images/desktop/image-interactive.jpg" class="interactiveimg" alt="image-interactive">
+      <img src="images/mobile/image-interactive.jpg"class="interactiveimg" alt="image-interactive">
         
       <div class="middlesection1">
         <p class="caps sectionheading" >The leader in interactive VR</p>
@@ -48,59 +46,63 @@
     
     <div class="ourcreationsbox">
       <p class="caps ourcreations">Our creations</p>
-      <button class="caps seeall">See all</button>
+      <button class="caps seeall desktopseeall">See all</button>
     </div>
     
 
     <div class="imagegrids">
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-deep-earth.jpg">
-        <p class="caps caption ">Deep earth</p>
+        <img class="gridimages" src="images/mobile/image-deep-earth.jpg">
+        <p class="caps caption ">Deep<br>earth</p>
       </div> 
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-night-arcade.jpg">
-        <p class="caps caption ">Night arcade</p>
+        <img class="gridimages" src="images/mobile/image-night-arcade.jpg">
+        <p class="caps caption ">Night<br>arcade</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-soccer-team.jpg">
-        <p class="caps caption ">Soccer team VR</p>
+        <img class="gridimages" src="images/mobile/image-soccer-team.jpg">
+        <p class="caps caption ">Soccer<br>team VR</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-grid.jpg">
-        <p class="caps caption ">The grid</p>
+        <img class="gridimages" src="images/mobile/image-grid.jpg">
+        <p class="caps caption ">The<br>grid</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-from-above.jpg">
-        <p class="caps caption ">From up above VR</p>
+        <img class="gridimages" src="images/mobile/image-from-above.jpg">
+        <p class="caps caption ">From up <br>above VR</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-pocket-borealis.jpg">
-        <p class="caps caption ">Pocket borealis</p>
+        <img class="gridimages" src="images/mobile/image-pocket-borealis.jpg">
+        <p class="caps caption ">Pocket<br>borealis</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-curiosity.jpg">
-        <p class="caps caption ">The curiosity</p>
+        <img class="gridimages" src="images/mobile/image-curiosity.jpg">
+        <p class="caps caption ">The<br>curiosity</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-fisheye.jpg">
-        <p class="caps caption ">Make it fisheye</p>
+        <img class="gridimages" src="images/mobile/image-fisheye.jpg">
+        <p class="caps caption ">Make it<br>fisheye</p>
       </div>
       
+      <div class="buttonclass">
+        <button class="caps seeall">See all</button>
+      </div>
   </div>
 </div>
 
-  <footer>
+<footer>
     <div class="firstcolumn">
       <div class="divlogo">
         <img src="images/logo.svg" class="logo">
       </div>
+      
       <div class="footerlinks">
         <a href="" class="bottommiddle">About</a>
         <a href="" class="bottommiddle">Careers</a>

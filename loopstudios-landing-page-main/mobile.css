@@ -15,7 +15,9 @@ img{
 a{
         text-decoration: none;
 }
-
+.desktop-images{
+    display: none;
+}
 .caps{
         text-transform: uppercase;
     }
@@ -23,6 +25,7 @@ a{
 
 
 .topsection{
+    position: relative;
     background-image: url("images/mobile/image-hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,22 +47,61 @@ a{
     top:4px;
     right:0px;
 }
+.navbaritems{
+    position: absolute;
+    width: 100%;
+    height:170vh;
+    top:0;
+    /* left:0; */
+    left:-100%;
+    background-color: black;
+    transition: all 0.3s ease-in-out ;
+}
 
-    
+.navbarlogo{
+    position: absolute;
+    top:40px;
+    left:25px;
+    width:35%;
+}
+#closeicon{
+    position: absolute;
+    top:44px;
+    right:25px;
+}
+
+.navbar-links{
+    position: absolute;
+    top:190px;
+    left:25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-links a{
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+    font-size: 8vw;
+    padding:10px 10px 10px 0;    
+}
+
+
+
+
+
 .heading{
     color:white;
     max-width:100%;
-    padding: 20px;
+    padding:5vw;
+    /* padding: 20px; */
     margin:190px 0px 190px 0px;
-    /* font-size: 5.1vw; */
-    font-size: 45px;
-    /* line-height: 40px; */
+    font-size: 11.1vw;
+    /* font-size: 45px; */
     border: 1px solid white ;
 }
 
 .container{
-    /* background-color: blue; */
-    margin:0 20px 0 20px;
+    margin:0 5vw 0 5vw;
 }
 
 .middlesection{
@@ -68,30 +110,34 @@ a{
     
 }
 .middlesection1{
-    /* background-color: pink; */
-    padding:40px 30px 50px 30px;
+    padding: 9.4vw 9vw;
+    /* padding:40px 30px 50px 30px; */
 }
-.sectionheading{
-    /* font-size:3.3vw ; */
-    font-size: 30px;
-    padding: 8px;
-    /* background-color: brown; */
 
+.sectionheading{
+    font-size:8vw ;
+    font-weight: 500;
+    /* font-size: 30px; */
+    padding: 8px;
 }
+
 .sectionpara{
-    padding:15px;
-    /* background-color: yellow; */
+    padding:4vw;
+    /* padding:15px; */
     font-family: 'Alata', sans-serif;
-    /* font-size: 1.1vw; */
-    font-size: 15px;
+    font-size: 3.4vw;
+    /* font-size: 15px; */
     color:hsl(0, 0%, 55%);
-    /* line-height: 2.2vw; */
-    line-height: 25px;
+    line-height: 8vw;
+    /* line-height: 25px; */
 
 }
 .ourcreationsbox{
-    font-size: 30px;
-    padding:30px 0 30px 0;
+
+    font-weight: 500;
+    font-size: 8vw;
+    /* font-size: 30px; */
+    padding:7vw 0 7vw 0;
     text-align: center;
 }
 
@@ -100,12 +146,8 @@ a{
 }
 .griditems{
     color: white;
-   
     position: relative;
     margin-bottom: 20px;
-    /* background: rgba(0, 0, 0, 0.3); */
-    /* background-color: aqua; */
-    
 }
 
 .griditems::after{
@@ -126,26 +168,28 @@ a{
 .caption{
     color:white;
     position: absolute;
-    top:60px;
+    bottom:20px;
     left:20px;
-    font-size: 22px;
+    font-size: 6vw;
+    /* font-size: 22px; */
     z-index: 100;
 }
 
 .buttonclass{
-    margin: 40px 0 60px 0;
+    margin:10vw 0 20vw 0;
+    /* margin: 40px 0 60px 0; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .seeall{
-    /* font-size: 1.5vw; */
-    font-size: 15px;
-    /* margin:20px 0px  20px 50%; */
+    font-size: 4vw;
+    /* font-size: 1 5px; */
     font-family: 'Alata', sans-serif;
     background-color: white;
-    /* padding:1vw 1vw 1vw 1.vw; */
-    padding:8px 30px 8px 30px;
+    padding:2.4vw 6.2vw 2.4vw 6.2vw;
+    /* padding:8px 30px 8px 30px; */
     color:black;
     border: 1px solid black;
     outline: none;
@@ -162,7 +206,8 @@ a{
 
 footer{
     background-color: black;
-    padding:20px;
+    padding:4vw;
+    /* padding:20px; */
     color:white;
     display: flex;
     flex-direction: column;
@@ -171,6 +216,7 @@ footer{
 }
 
 footer a{
+    font-size: 5.2vw;
     color:white;
     display: block;
 }
@@ -183,14 +229,20 @@ footer a{
 }
 
 .divlogo{
-    padding:30px;
+    padding:6.2vw;
+    /* padding:30px; */
 }
-
+.logo{
+    max-width: 100%;
+    height: auto;
+}
 .footerlinks{
-    padding:10px;
+    padding:2vw;
+    /* padding:10px; */
 }
 .footerlinks a{
-    padding:15px;
+    padding:4vw;
+    /* padding:15px; */
     font-weight: 900;
 }
 
@@ -199,15 +251,21 @@ footer a{
     flex-direction: row;
     /* align-items:stretch; */
     justify-content: center;
-    padding:20px;
+    padding:4vw;
 }
 
-.socialmedia a{
-    padding:0px 10px 0px 10px;
+.socialmedia img{
+    max-width:100%;
+    
+    padding:0px 2vw 0px 2vw;
+    /* padding:0px 10px 0px 10px; */
 }
 
 .footercopyright{
-    padding:10px 20px 30px 20px;
+    font-size: 3.9vw;
+    
+    padding:2vw 4vw 5vw 4vw;
+    /* padding:10px 20px 30px 20px; */
     color:hsl(0, 0%, 55%);
     font-weight: bold;
 }

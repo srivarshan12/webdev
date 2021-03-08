@@ -9,23 +9,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </head>
 
 <body>
   <div class="topsection">
+    <div class="logorow">
+      <img src="images/logo.svg"  id="logo" alt="image-logo">
+      <img src="images/icon-hamburger.svg" id="hamburger" alt="image-hamburger">
+  </div>
+  <nav class="navbar">
+    <div class="navbaritems">
+      <div class="navbar-toprow">
+        <img src="images/logo.svg"  class="navbarlogo"  alt="image-logo">
+        <img src="images/icon-close.svg" id="closeicon" alt="image-close">
+      </div>
+      <div class="navbar-links">
+        <a href="" class="topmiddle">About</a>
+        <a href="" class="topmiddle">Careers</a>
+        <a href="" class="topmiddle">Events</a>
+        <a href="" class="topmiddle">Products</a>
+        <a href="" class="topmiddle">Support</a>
+      </div>
+    </div>
+  </nav>
     
-    <img src="images/logo.svg" alt="image-logo">
-    <nav class="navbar">
-      <a href="" class="topmiddle">About</a>
-      <a href="" class="topmiddle">Careers</a>
-      <a href="" class="topmiddle">Events</a>
-      <a href="" class="topmiddle">Products</a>
-      <a href="" class="topmiddle">Support</a>
-    </nav>  
+    
     <header class="heading">
       <p class="caps">Immersive experiences that deliver</p>
     </header>
@@ -34,7 +44,8 @@
   <div class="container">
 
     <section class="middlesection">
-      <img src="images/desktop/image-interactive.jpg" class="interactiveimg" alt="image-interactive">
+      <img src="images/desktop/image-interactive.jpg" class="interactiveimg desktop-images" alt="image-interactive">
+      <img src="images/mobile/image-interactive.jpg"  class="interactiveimg mobile-images" alt="image-interactive">
         
       <div class="middlesection1">
         <p class="caps sectionheading" >The leader in interactive VR</p>
@@ -48,51 +59,58 @@
     
     <div class="ourcreationsbox">
       <p class="caps ourcreations">Our creations</p>
-      <button class="caps seeall">See all</button>
+      <button class="caps seeall desktopseeall">See all</button>
     </div>
     
 
     <div class="imagegrids">
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-deep-earth.jpg">
-        <p class="caps caption ">Deep earth</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-deep-earth.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-deep-earth.jpg">
+        <p class="caps caption ">Deep<br>earth</p>
       </div> 
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-night-arcade.jpg">
-        <p class="caps caption ">Night arcade</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-night-arcade.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-night-arcade.jpg">
+        <p class="caps caption ">Night<br>arcade</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-soccer-team.jpg">
-        <p class="caps caption ">Soccer team VR</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-soccer-team.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-soccer-team.jpg">
+        <p class="caps caption ">Soccer<br>team VR</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-grid.jpg">
-        <p class="caps caption ">The grid</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-grid.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-grid.jpg">
+        <p class="caps caption ">The<br>grid</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-from-above.jpg">
-        <p class="caps caption ">From up above VR</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-from-above.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-from-above.jpg">
+        <p class="caps caption ">From up<br>above VR</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-pocket-borealis.jpg">
-        <p class="caps caption ">Pocket borealis</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-pocket-borealis.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-pocket-borealis.jpg">
+        <p class="caps caption ">Pocket<br>borealis</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-curiosity.jpg">
-        <p class="caps caption ">The curiosity</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-curiosity.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-curiosity.jpg">
+        <p class="caps caption ">The<br>curiosity</p>
       </div>
       
       <div class="griditems">
-        <img class="gridimages" src="images/desktop/image-fisheye.jpg">
-        <p class="caps caption ">Make it fisheye</p>
+        <img class="gridimages desktop-images" src="images/desktop/image-fisheye.jpg">
+        <img class="gridimages mobile-images" src="images/mobile/image-fisheye.jpg">
+        <p class="caps caption ">Make it<br>fisheye</p>
       </div>
-      
   </div>
 </div>
 

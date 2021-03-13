@@ -10,4 +10,6 @@
 
 <li>Room homepage: <a href="https://roomhomepage-rosy.vercel.app/">view site</a></li>
 
+<li>Loopstudios-landing-page: <a href="https://srivarshan12.github.io/frontend-mentor/loopstudios-landing-page-main/">view site</a></li>
+
 <ul>

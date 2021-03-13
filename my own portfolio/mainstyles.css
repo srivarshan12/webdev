@@ -70,7 +70,7 @@ h3{
     font-size: 2.5vw;
 }
 
-li,p{
+li,p,input,textarea{
     font-size: 1.2vw;
 }
 button{
@@ -238,7 +238,7 @@ body{
     /* padding:60px 0; */
 }
 
-.socialmedia-icons i{
+.socialmedia-icons i {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -250,8 +250,9 @@ body{
     /* padding:0.8vw; */
     margin:0.3vw;
     /* margin:5px; */
-
+    font-size:1.2vw ;
 }
+
 
 .socialmedia-icons a:visited{
 color:white;

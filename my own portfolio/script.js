@@ -23,6 +23,18 @@ $(document).ready(function(){
 
 
 
+
+    $(".hamburger").click(function(){
+        console.log("sds");
+        $(".navbar").css("left","0");
+    })
+
+    $(".close").click(function(){
+        // console.log("sds");
+        $(".navbar").css("left","-100%");
+    })
+
+
     // Preloader
     preloaderFadeOutTime = 2000;
     function hidePreloader() {

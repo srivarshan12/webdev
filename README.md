@@ -1,8 +1,8 @@
 <h1>Django</h1>
 <ol>
 <li>blog: <a href="http://srivarshan12.pythonanywhere.com">view site</a></li>
-<li>Portfolio:< a href="http://srivarshan13.pythonanywhere.com">view site</a></li>
-<ol>
+<li>Portfolio:<a href="http://srivarshan13.pythonanywhere.com">view site</a></li>
+</ol>
   
   
 <h1>HTML,CSS,JS</h1>
@@ -12,4 +12,4 @@
 <li>Social media dashboard with theme changer:  <a href="https://theme-switcher-n1yl9fm5q.vercel.app/">view site</a></li>
 <li>Room homepage: <a href="https://roomhomepage-rosy.vercel.app/">view site</a></li>
 <li>Loopstudios-landing-page: <a href="https://srivarshan12.github.io/webdev//loopstudios-landing-page-main/">view site</a></li>
-<ol>
+</ol>

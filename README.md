@@ -6,6 +6,7 @@
   
   
 <h1>HTML,CSS,JS</h1>
+<h2>Frontend Mentor</h2>
 <ol>
 <li>Article preview component: <a href="https://srivarshan12.github.io/webdev/article-preview-component-master/">view site</a></li>
 <li>Base apparel coming soon:   <a href="https://myprojects-n06lu5ylf.vercel.app/">view site</a></li>

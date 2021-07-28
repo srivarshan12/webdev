@@ -7,10 +7,6 @@ body ,p ,ul,li, a ,h1, h2, h3, h4, h5{
     margin:0;
 }
 
-.attribution{
-    text-align: center;
-}
-
 li{
     text-decoration: none;
     list-style: none;
@@ -20,14 +16,68 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+    height:auto;
+}
+
+
+.navitems-list a,
+.bring-everyone,
+.whats-diferent-about-manage,
+.number-box h4,
+.what-they-have-said{
+    color:hsl(228, 39%, 23%);
+
+}
+
+.footer{
+    background-color: hsl(233, 12%, 13%);
+}
+
+.navitems-list a:hover,
+.details p,
+.details-left p,
+.number-box p,
+.people-comment,
+.inputfield::placeholder,
+.copyright{
+    color: hsl(227, 12%, 61%);
+
+}
+
+.get-started-btn,
+.number,
+.footer a,
+.submit-btn
+{
+    color:hsl(0, 0%, 98%);
+}
+
+
+.navitems-list a:hover,
+.get-started-btn:hover,
+.submit-btn:hover{
+    cursor: pointer;
+}
+
 @media screen and (min-width:426px){
 
-.hamburger,
-.close {
+#hamburger,
+#close,
+#desktop-hidden-illustration,
+.p-details-right-desktop-hidden,
+.desktop-hidden-socialmedia-icons-div,
+#desktop-hidden-copyright{
     display:none;
 }
 
-.upper-background-image{
+.attribution{
+    text-align: center;
+    font-size: 1.1vw;
+}
+
+.desktop-upper-background-image{
     background: url("images/bg-tablet-pattern.svg") 115% -50% ;
     background-repeat:no-repeat;
     background-size: 51% 85%;
@@ -35,7 +85,7 @@ a{
 
 }
 
-.lower-background-image{
+.desktop-lower-background-image{
     background: url("images/bg-tablet-pattern.svg") -65% 60% ;
     background-repeat:no-repeat;
     background-size: 51% 59%;
@@ -73,40 +123,6 @@ a{
     padding:0.7vw;
 }
 
-.navitems-list a,
-.bring-everyone,
-.whats-diferent-about-manage,
-.number-box h4,
-.what-they-have-said{
-    color:hsl(228, 39%, 23%);
-
-}
-
-.navitems-list a:hover,
-.details p,
-.details-left p,
-.number-box p,
-.people-comment,
-.inputfield::placeholder,
-#copyright{
-    color: hsl(227, 12%, 61%);
-
-}
-
-.get-started-btn,
-.number,
-.footer a,
-.submit-btn
-{
-    color:hsl(0, 0%, 98%);
-}
-
-
-.navitems-list a:hover,
-.get-started-btn:hover,
-.submit-btn:hover{
-    cursor: pointer;
-}
 
 .navitems-list a{
     font-weight: 500;
@@ -325,11 +341,6 @@ a{
     box-shadow:  0 0.5px 4px hsl(233, 12%, 13%);
 }
 
-.footer{
-    background-color: hsl(233, 12%, 13%);
-
-}
-
 .footer-content{
     padding:5.1% 0;
     width:80%;
@@ -366,7 +377,7 @@ a{
 
 .footer-second-column li,
 .footer-third-column li{
-    padding:7% 0;
+    padding-bottom:1vw ;
     font-size: 1.21vw;
 }
 
@@ -387,6 +398,13 @@ a{
     justify-content: space-between;
 }
 
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    width:30%;
+}
 
 .subscription{
     display: flex;
@@ -446,7 +464,7 @@ a{
 
 }
 
-#copyright{
+.copyright{
     font-size: 1vw;
 }
 

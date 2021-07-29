@@ -22,7 +22,7 @@
         background-image: url("images/desktop/image-hero.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-color: aqua;
+/*         background-color: aqua; */
         padding:4vw 4vw 8.6vw 10vw;
         position: relative;
     }

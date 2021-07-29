@@ -163,7 +163,7 @@
  
     #bg-img2{
     width:32%;
-    background-color: blue;
+/*     background-color: blue; */
     background-image: url("images/image-about-dark.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +197,7 @@
  
     #bg-img3{
     width:32%;
-    background-color: blueviolet;
+/*     background-color: blueviolet; */
     background-image: url("images/image-about-light.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -378,7 +378,7 @@
     #bg-img2{
         /* width:100vw; */
         height:64vw;
-        background-color: blue;
+/*         background-color: blue; */
         background-image: url("images/image-about-dark.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -407,7 +407,7 @@
 
     #bg-img3{
         height:65vw;
-        background-color: blueviolet;
+/*         background-color: blueviolet; */
         background-image: url("images/image-about-light.jpg");
         background-position: center;
         background-repeat: no-repeat;

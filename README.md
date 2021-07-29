@@ -1,8 +1,8 @@
 <h1>Django</h1>
-<ol>
+<ul>
 <li>blog: <a href="http://srivarshan12.pythonanywhere.com">view site</a></li>
 <li>Portfolio:<a href="http://srivarshan13.pythonanywhere.com">view site</a></li>
-</ol>
+</ul>
   
   
 <h1>HTML,CSS,JS</h1>

@@ -4,26 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Manage landing page</title>
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap" rel="stylesheet">  
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"/>
-  
-
-
 </head>
 <body>
-    
-  <div class="mobile-lower-background-image">
-
-    <div class="desktop-upper-background-image mobile-upper-background-image ">
-      <!-- header -->
-      <div class="header">
+  <div class="mobile-lower-background-image">  <!--mobile-lower-background-image-->
+    <div class="desktop-upper-background-image mobile-upper-background-image ">  <!--desktop-upper-background-image mobile-upper-background-image-->
+      <div class="header"> 
+          
           <div class="header-logo">
             <img class="logo-top" src="images/logo.svg" alt="logo">
           </div>
@@ -37,17 +29,15 @@
               <li class="navitems-list"><a href="#">Community</a></li>
             </ul>
           </nav>
-        <!-- mobile -->
-          <div class="hamburger-close">
+
+          <div class="hamburger-close">  <!--mobile-->
             <img  id="hamburger" onclick="opennavbar()" src="images/icon-hamburger.svg" alt="hamburger-icon">  
             <img  id="close"  onclick="closenavbar()" src="images/icon-close.svg" alt="close-icon">
-          </div>
-        <!-- mobile -->
+          </div><!--mobile-->
+
           <button id="mobile-hidden-get-started-btn" class="get-started-btn">Get Started</button>
       </div>
-      <!-- header -->
-
-
+<!-- --------------------------------------------------------------------------------------------------------------------------- -->
       <div class="first-row">
           <div class="illustration" id="desktop-hidden-illustration">  
             <img src="images//illustration-intro.svg" class="illustration-image" alt="illustrations">
@@ -68,9 +58,10 @@
             <img src="images//illustration-intro.svg" class="illustration-image" alt="illustrations">
           </div>
       </div>
-    </div>
+<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+    </div> <!--desktop-upper-background-image mobile-upper-background-image-->
     
-    <div class="desktop-lower-background-image">
+    <div class="desktop-lower-background-image">             <!-- desktop-lower-background-image -->
       <div class="second-row">
           <div class="details-left">
             <h3 class="whats-diferent-about-manage">What’s different about Manage?</h3>
@@ -113,7 +104,7 @@
               </div>
           </div>
       </div>
-
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
       <div class="third-row">
         <h4 class="what-they-have-said">What they’ve said</h4>    
         <div class="testimonials-carousel">
@@ -172,26 +163,9 @@
             <button class="get-started-btn ">Get Started</button>
         </div>
       </div>
-    </div>
-
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- ---------------------------------------------------------------------------------------------------------------- -->
+    </div>  <!-- desktop-lower-background-image -->                  
+  </div>  <!--mobile-lower-background-image-->
 
 
       <div class="fourth-row">
@@ -200,7 +174,7 @@
           <button class="get-started-btn">Get Started</button>
         </div>
       </div>
-
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
       <div class="footer">
         <div class="footer-content">
             <div class="footer-first-column">
@@ -249,8 +223,8 @@
           <div class="subscription">
             <div class="inputfield-submit-btn-errormsg">
               <div class="inputfield-submit-btn">
-                  <input class="inputfield" label="email" id="checkemail" type="text" placeholder="Updates in your inbox…">
-                  <button class="submit-btn"  label type="submit" onclick="checkemail()">Go</button>
+                  <input class="inputfield"  id="checkemail" type="text" placeholder="Updates in your inbox…">
+                  <button class="submit-btn"   type="submit" onclick="checkemail()">Go</button>
               </div>
               <p id="email-errormsg">Please insert a valid email</p>
             </div>
@@ -258,7 +232,7 @@
           </div>
         </div>
       </div>
-      
+<!------------------------------------------------------------------------------------------------------------------------>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.frontendmentor.io/profile/srivarshan12">Srivarshan</a>.
@@ -267,10 +241,8 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="desktop-styles.css">
-  <link rel="stylesheet" href="mobile-styles.css">
-  
-  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 
 </body>
 </html>

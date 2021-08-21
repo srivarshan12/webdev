@@ -1,25 +1,32 @@
 .artist-info{
     margin:50px 0;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns:  50% 50%;
+    grid-gap: 50px;
+    /* flex-direction: row; */
 }
-.divmap{
-    max-width:100%;
-    margin-right:50px;
 
-    /* overflow: hidden; */
-}
+
 .map{
-    width: 50%;
+    position:relative;
+    padding-bottom:60%;
+    height:0;
+    overflow:hidden;
+}
+
+.map iframe{
+    position:absolute;
+
+    left:0;
+    top:0;
+    height:100% !important;
+    width:100% !important;
 }
 
 .info{
-    /* background-image: url("/static/img/others/contact-form-bg.png"); */
-    /* background-position: center; */
-    width:50%;
+    width:90%;
     position: relative;
     /* opacity: 1; */
-
 }
 
 .info::after{
@@ -43,11 +50,13 @@ ul li{
     padding:0;
     margin:0;
 }
+
 ul{
     padding:0;
     margin:0;
 
 }
+
 a{
     text-decoration: none;
 }
@@ -81,10 +90,10 @@ li,a{
         color:#978f8f;
 
 }
+
 .socialmedia ul {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;    
 }
 
 
@@ -120,6 +129,7 @@ li,a{
 .twitter{
     background-color: #55ACEE;
 }
+
 .twitter:hover{color:#55ACEE}
 
 .google-plus{
@@ -230,9 +240,9 @@ li,a{
 
 
 .ipfield::placeholder, .ipfield1::placeholder{
-    color:#888888 ;
-    
+    color:#888888 ;    
 }
+
 .ipfield1:focus ,.ipfield1:active{
     background-color: #252525;
 }

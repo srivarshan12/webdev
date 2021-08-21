@@ -39,7 +39,7 @@ a{
 
 .left-text p{
     letter-spacing: 1px;
-    line-height: 25px;
+    line-height: 1.6;
     margin:30px 0;
     text-align: left;
 }
@@ -118,15 +118,12 @@ a{
     background-repeat: no-repeat;
     background-position : center;
     background-size: cover;
-    background-attachment:fixed;
-        
-    
-    /* z-index: -5; */
+    background-attachment:fixed;    
 }
+
 .premium p{
-    /* font-family: "Droid Sans", sans-serif; */
-    width:600px;
-    line-height: 24px;
+    width:50%;
+    line-height: 1.6;
     padding:20px 0;
 }
 
@@ -154,9 +151,6 @@ a{
     color:white;
     font-weight: 900;
     letter-spacing: 1px;
-
-
-    
     transform: translateZ(0);
     position: relative;
     background: #a81c51;
@@ -164,20 +158,20 @@ a{
   
 }
     
-.pricing-btn::before{
+.pricing-btn::before{   
     content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  transform: scaleY(0);
-  transform-origin: 50%;
-  transition-property: transform;
-  transition-duration: 0.4s;
-  transition-timing-function:cubic-bezier(.32,2,.55,.27);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    transform: scaleY(0);
+    transform-origin: 50%;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function:cubic-bezier(.32,2,.55,.27);
 
 }
 
@@ -216,9 +210,9 @@ a{
     color: #a81c51;
     cursor: pointer;  
 }
+
 .pricing-btn:hover::before{
   transform: scaleY(1);
-
 }
 
 .pricing-btn:hover .brush-icon{
@@ -236,12 +230,14 @@ a{
 
 
 
+
+
 .different-types{
     display:grid;
     grid-gap:30px;
-    grid-template-columns: 370px 370px 370px ;
-    /* background-color: #66b8ff; */
+    grid-template-columns: 31% 31% 31% ;
 }
+
 .different-types h2{
     font-family: "Josefin Sans", sans-serif;
     font-size: 30px;
@@ -249,7 +245,6 @@ a{
     text-transform: capitalize;
     font-weight: 300;
     margin-top:0 ;
-
 }
 
 .text-box{
@@ -259,18 +254,15 @@ a{
 .h2-and-p{
     padding:10px;
     overflow: hidden;
-
 }
 
 .h2-and-p h2{
     font-size: 27px;
-
 }
 
 .different-types p{
-    line-height: 25px;
+    line-height: 1.6;
     letter-spacing: 0.5px;
-
 }
 
 .img-box, 
@@ -279,6 +271,7 @@ a{
     transform: scale(1);
     height:fit-content;
 }
+
 .icon-img{
     padding:5px;
 }

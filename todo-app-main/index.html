@@ -5,32 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
   <title>Frontend Mentor | Todo app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Todo
+<body id="bg-change">
+<div class="container">
+    <header>
+        <h1>Todo</h1>
+        <div id="icon-sun-moon">
+            <img id="sun" src="images/icon-sun.svg">
+            <img id="moon" src="images/icon-moon.svg">
+        </div>
+    </header>  
 
-  <!-- Add dynamic number --> items left
+    <div class="input-item">
+        <button id="check-btn"></button>
+        <input type="text" id="input" autocomplete="off"  placeholder="Create a new todo...">
+        <input type="button" id="submit-btn">
+    </div>
 
-  All
-  Active 
-  Completed
 
-  Clear Completed
+    <div id="listofitems">
+        <div class=" item all completed ">
+            <button id="check-btn" class="check-btn" ><img id="check-img"  src="images/icon-check.svg"></button>
+            <p>Complete online javascript course</p>
+        </div>
+        
+        <div class=" item all active ">
+            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+            <p>Jog around the park 3x</p>
+        </div>
 
-  Drag and drop to reorder list
+        <div class=" item all active">
+            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+            <p>10 minutes meditation</p>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class=" item all active">
+            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+            <p>Read for 1 hour</p>
+        </div>
+
+        <div class=" item all active">
+            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+            <p>Pick up groceries</p>
+        </div>
+
+        <div class=" item all active">
+            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+            <p>Complete Todo App on FrontendMentor</p>
+        </div>       
+    </div>
+    <div class="lastitem">
+        <p class="footerlinks" id="noofitems"></p>
+       <div class="grouped">
+            <p class="footerlinks footeractive" id="allitems" onclick="filterobjects('all')">All</p>
+            <p class="footerlinks" id="activeitems" onclick="filterobjects('active')">Active</p> 
+            <p class="footerlinks" id="completeditems" onclick="filterobjects('completed')  ">Completed</p>
+       </div>
+        <p  id="clearcompleted">Clear Completed</p>
+    </div>
+    <!-- <div class="  grouped">
+        <p class="footerlinks footeractive" id="allitems" onclick="filterobjects('all')">All</p>
+        <p class="footerlinks" id="activeitems" onclick="filterobjects('active')">Active</p> 
+        <p class="footerlinks" id="completeditems" onclick="filterobjects('completed')  ">Completed</p>
+   </div> -->
+    
+    <p class="footer">Drag and drop to reorder list</p>
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- <link rel="stylesheet" href="mobile.css"> -->
+
+<link rel="stylesheet" href="styles1.css">
+
+<script src="script.js"></script>
 </body>
 </html>

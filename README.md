@@ -1,7 +1,8 @@
 <h1>Django</h1>
 <ol>
 <li>Blog: <a href="http://srivarshan12.pythonanywhere.com">view site</a></li>
-<li>Portfolio:<a href="http://srivarshan13.pythonanywhere.com">view site</a></li>
+<!-- <li>Portfolio:<a href="http://srivarshan13.pythonanywhere.com">view site</a></li> -->
+<li>Shades of drawing: <a href="http://shadesofdrawing12.pythonanywhere.com/">view site</a> (desktop only)</li>
 </ol>
   
   

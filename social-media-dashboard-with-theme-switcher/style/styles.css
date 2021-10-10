@@ -75,7 +75,7 @@ html.transition *:after {
 	--second-container: #63687e;
 	--followers: #63687e;
 }
-
+ 
 .dark-mode {
 	--body: #1e202a;
 	--smd: #1f212e;

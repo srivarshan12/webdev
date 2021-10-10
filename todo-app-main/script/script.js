@@ -26,23 +26,28 @@ var footeractive=document.getElementsByClassName("footeractive");
 var noofitems=document.getElementById("noofitems");
 noofitems.innerHTML=active.length+" items left";
 
-var body=document.getElementsByTagName("BODY")[0];
+var body=document.body;
 var themechanger=document.getElementById("icon-sun-moon");
 var sun=document.getElementById("sun");
 var moon=document.getElementById("moon"); 
+var bgchange=document.getElementById("bg-change");
+
+var darktheme=true;
+bgchange.style.backgroundImage="url(./images/bg-desktop-dark.jpg)";
 
 themechanger.onclick=function(){
+  body.classList.toggle('lighttheme');
+  if(darktheme==true)
+  {
+    bgchange.style.backgroundImage="url(./images/bg-desktop-light.jpg)";
+    darktheme=false;
+  }
 
-  themechanger.classList.toggle('themechange');
-  document.body.classList.toggle('change');
-  // console.log(body.style);
-
+  else{
+    bgchange.style.backgroundImage="url(./images/bg-desktop-dark.jpg)";
+    darktheme=true;
+  }
 }
-
-
-
-
-
 
 // filter objects
 

@@ -1,23 +1,31 @@
-.themechange #moon {
+:root {
+  --body-bg:hsl(235, 21%, 11%);
+  --listitem-clr:hsl(235, 24%, 19%);
+  --lightgray:hsl(234, 39%, 85%);
+  --darkgray:hsl(234, 11%, 52%);
+  --blue:hsl(220, 98%, 61%);
+  --white:#fff;
+}
+
+.lighttheme {
+  --body-bg:hsl(0, 0%, 98%);
+  --listitem-clr:#fff;
+  --lightgray:hsl(235, 19%, 35%);
+  --darkgray:hsl(236, 9%, 61%);
+  --blue:hsl(220, 98%, 61%);
+  --white:#fff;
+}
+
+.lighttheme #moon {
   display: block;
 }
 
-.themechange #sun {
+.lighttheme #sun {
   display: none;
 }
 
-.themechange #bg-change {
-  background-image: url(images/bg-desktop-light.jpg);
-  background-color: red;
-}
-
-.change {
-  background-color: red;
-}
-
 #bg-change {
-  background-color: #161722;
-  background-image: url(images/bg-desktop-dark.jpg);
+  background-color: var(--body-bg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -27,7 +35,7 @@
 .lastitem,
 #input,
 #check-btn {
-  background-color: #25273c;
+  background-color: var(--listitem-clr);
 }
 
 .input-item,
@@ -35,55 +43,55 @@
 #input,
 .grouped .footerlinks:hover,
 #clearcompleted:hover {
-  color: #cacde8;
+  color: var(--lightgray);
 }
 
 .item:hover #check-btn {
-  border: 1px solid #cacde8;
+  border: 1px solid var(--lightgray);
 }
 
 .completed #check-btn {
-  background-color: #3a7bfd;
+  background-color: var(--blue);
 }
 
 .footer, .footerlinks,
 #input::-webkit-input-placeholder,
 .lastitem,
 .completed {
-  color: #777a92;
+  color: var(--darkgray);
 }
 
 .footer, .footerlinks,
 #input:-ms-input-placeholder,
 .lastitem,
 .completed {
-  color: #777a92;
+  color: var(--darkgray);
 }
 
 .footer, .footerlinks,
 #input::-ms-input-placeholder,
 .lastitem,
 .completed {
-  color: #777a92;
+  color: var(--darkgray);
 }
 
 .footer, .footerlinks,
 #input::placeholder,
 .lastitem,
 .completed {
-  color: #777a92;
+  color: var(--darkgray);
 }
 
 #check-btn {
-  border: 1px solid #777a92;
+  border: 1px solid var(--darkgray);
 }
 
 header h1 {
-  color: #fff;
+  color: var(--white);
 }
 
 #listofitems .item {
-  border-bottom: 0.5px solid #777a92;
+  border-bottom: 0.5px solid var(--darkgray);
 }
 
 * {
@@ -265,8 +273,14 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
-  .lightmode .footeractive {
+  .footeractive {
     color: #3a7bfd;
   }
+  #listofitems,
+  .lastitem,
+  .input-item {
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
-/*# sourceMappingURL=styles1.css.map */
+/*# sourceMappingURL=desktop-styles.css.map */

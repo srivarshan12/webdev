@@ -4,8 +4,7 @@
     --lightgray:hsl(234, 39%, 85%);  
     --darkgray:hsl(234, 11%, 52%);
     --blue:hsl(220, 98%, 61%);
-    --white:#fff;
-    
+    --white:#fff;    
 }
 
 .lighttheme{
@@ -21,21 +20,15 @@
     #sun{
         display:none;
     }
-
 }
 
-#bg-change{
-    background-color: var(--body-bg);    
-    // background-image:url("/images/bg-desktop-dark.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;    
-}
 
 .input-item,
 .item,
 .lastitem,
 #input,
-#check-btn{
+#tick-btn,
+.groupedmobile{
     background-color: var(--listitem-clr);
 }
 
@@ -47,15 +40,9 @@
     color: var(--lightgray);
 }
 
-
-.item:hover #check-btn{
-    border:1px solid var(--lightgray);
-}
-
-.completed #check-btn{
+.completed #tick-btn{
     background-color: var(--blue);
 } 
-
 
 .footer, .footerlinks,
 #input::placeholder,
@@ -64,10 +51,10 @@
     color: var(--darkgray);
 }
 
-
-#check-btn{
+#tick-btn{
     border: 1px solid var(--darkgray);
 }
+
 header{
     h1{
         color: var(--white);
@@ -80,26 +67,34 @@ header{
     }
 }
 
-
 *{
     padding:0;
     margin:0;
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
 img{
     max-width: 100%;
     height:auto;
 }
-
-
-@media only screen and (min-width: 376px)
+@media only screen and (min-width: 377px)
 {
+
+    .item:hover #tick-btn{
+        border:1px solid var(--lightgray);
+    }
+    
+    #bg-change{
+        background-color: var(--body-bg);    
+        background-repeat: no-repeat;
+        background-size: contain;    
+        background-image: url("../images/bg-desktop-dark.jpg");
+    }
 
     #submit-btn,
     #moon,
-    #cross-img{
+    #cross-img,
+    .desktop-hidden{
         display: none;
     }
 
@@ -139,12 +134,15 @@ img{
 
     .item{
         display:none;
+        position: relative;
         p{
             font-size: 1rem;
-            width:80%;
+            // max-width:80%;
+            width:75%;
+            
         }
         &:hover #cross-img{
-            display:block;
+            display:flex;
         }
             
     }
@@ -153,14 +151,13 @@ img{
         border-radius: 5px;
     }
 
-    #check-btn{
+    #tick-btn{
         border-radius: 50%;
         outline:none;
-        width:1.5vw;
-        height:1.5vw;
+        width:1.2rem;
+        height:1.2rem;
         margin:0 4%;
     }
-
 
     #input{
         outline:none;
@@ -169,8 +166,6 @@ img{
         width:80%;
         font-weight: 400;   
     }
-
-
 
     #listofitems{
         display: grid;
@@ -182,38 +177,36 @@ img{
         overflow: hidden;
     }
 
-    #check-img{
+    #tick-img{
         visibility: hidden;
     }
 
     .completed{
         text-decoration:line-through ;
-
-        #check-img{
+        #tick-img{
             visibility: visible;
         }
     }
 
-
-
-
     #cross-img{
-        margin:0 4%;
+        position: absolute;
+        right:4%;
+        width:1rem;
+        height:1rem;
+        
     }
-
 
     .lastitem{
         display: flex;
         flex-direction: row;
-        font-size: 0.9em;
+        font-size: 1rem;
         padding:3% 0;
+        margin-bottom: 14%;
         width:100%;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;   
         text-align: center;
     }
-
-
 
     .footer,
     .footerlinks{
@@ -240,16 +233,15 @@ img{
         }
     }
 
-
-    #check-btn:hover,
-    #check-img:hover,
+    
+    #tick-btn:hover,
+    #tick-img:hover,
     #cross-img:hover,
     .grouped .footerlinks:hover,
     #clearcompleted:hover,
     #icon-sun-moon{
         cursor: pointer;
     }
-
 
     .footer{
         padding:10%;
@@ -268,4 +260,29 @@ img{
     .input-item{
         box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
     }
+
+    .desktop-hidden{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1155px) and (min-width: 375px )
+{
+    .grouped{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin:0 auto;
+        padding:0 2%;
+
+        .footerlinks{
+            padding: 0 5%;
+        }
+    }
+    #clearcompleted {
+        margin: 0 0%;
+    }
+    
+
 }

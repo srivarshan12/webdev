@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">  
   <title>Frontend Mentor | Todo app</title>
-
 </head>
 
 <body id="bg-change" class="darkmode">
@@ -17,71 +15,72 @@
     <header>
         <h1>Todo</h1>
         <div id="icon-sun-moon">
-            <img id="sun" src="images/icon-sun.svg">
-            <img id="moon" src="images/icon-moon.svg">
+            <img id="sun" src="images/icon-sun.svg" alt="icon-sun">
+            <img id="moon" src="images/icon-moon.svg" alt="icon-moon">
         </div>
     </header>  
 
     <div class="input-item">
-        <button id="check-btn"></button>
+        <button id="tick-btn"></button>
         <input type="text" id="input" autocomplete="off"  placeholder="Create a new todo...">
         <input type="button" id="submit-btn">
     </div>
 
 
     <div id="listofitems">
-        <div class=" item all completed ">
-            <button id="check-btn" class="check-btn" ><img id="check-img"  src="images/icon-check.svg"></button>
-            <p>Complete online javascript course</p>
-        </div>
+        <article class=" item all completed ">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img"  src="images/icon-check.svg" alt="close-img"></button>
+            <p>Complete Todo App on Frontend Mentor</p>
+        </article>
         
-        <div class=" item all active ">
-            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+        <article class=" item all active ">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img" src="images/icon-check.svg" alt="close-img"></button>
             <p>Jog around the park 3x</p>
-        </div>
+        </article>
 
-        <div class=" item all active">
-            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+        <article class=" item all active">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img" src="images/icon-check.svg" alt="close-img"></button>
             <p>10 minutes meditation</p>
-        </div>
+        </article>
 
-        <div class=" item all active">
-            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+        <article class=" item all active">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img" src="images/icon-check.svg" alt="close-img"></button>
             <p>Read for 1 hour</p>
-        </div>
+        </article>
 
-        <div class=" item all active">
-            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
+        <article class=" item all active">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img" src="images/icon-check.svg" alt="close-img"></button>
             <p>Pick up groceries</p>
-        </div>
+        </article>
 
-        <div class=" item all active">
-            <button id="check-btn" class="check-btn" ><img id="check-img" src="images/icon-check.svg"></button>
-            <p>Complete Todo App on FrontendMentor</p>
-        </div>       
+        <article class=" item all active">
+            <button id="tick-btn" class="tick-btn" ><img id="tick-img" src="images/icon-check.svg" alt="close-img"></button>
+            <p>Complete online javascript course</p>
+        </article>    
     </div>
+    
     <div class="lastitem">
-        <p class="footerlinks" id="noofitems"></p>
-       <div class="grouped">
+        <p class="footerlinks " id="noofitems"></p>
+        <div class="grouped mobile-hidden">
             <p class="footerlinks footeractive" id="allitems" onclick="filterobjects('all')">All</p>
             <p class="footerlinks" id="activeitems" onclick="filterobjects('active')">Active</p> 
             <p class="footerlinks" id="completeditems" onclick="filterobjects('completed')  ">Completed</p>
-       </div>
+        </div>
         <p  id="clearcompleted">Clear Completed</p>
-    </div>
-    <!-- <div class="  grouped">
+    </div>    
+
+    <div class="groupedmobile desktop-hidden">
         <p class="footerlinks footeractive" id="allitems" onclick="filterobjects('all')">All</p>
         <p class="footerlinks" id="activeitems" onclick="filterobjects('active')">Active</p> 
         <p class="footerlinks" id="completeditems" onclick="filterobjects('completed')  ">Completed</p>
-   </div> -->
-    
-    <p class="footer">Drag and drop to reorder list</p>
+    </div>
 
+  
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<!-- <link rel="stylesheet" href="mobile.css"> -->
-
 <link rel="stylesheet" href="scss/desktop-styles.css">
+<link rel="stylesheet" href="scss/mobile-styles.css">
+
 <script src="script/script.js"></script>
 </body>
 </html>

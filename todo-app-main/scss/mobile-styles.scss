@@ -1,0 +1,164 @@
+@media only screen and (max-width: 375px)
+{
+
+    .mobile-hidden
+    {
+        display:none;
+    }
+
+    #bg-change{
+        background-color: var(--body-bg);    
+        background-repeat: no-repeat;
+        background-size: contain;    
+        background-image: url("../images/bg-mobile-dark.jpg");
+    }
+
+    #submit-btn,
+    #moon,
+    #cross-img{
+        display: none;
+    }
+
+    .container{
+        padding:12% 7%;
+
+    }
+
+    header{
+        display:flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin-bottom:10% ; 
+        h1{  
+            font-size:x-large;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+        }
+
+        #icon-sun-moon img{
+            max-width: 80%;
+        }
+    }
+
+    .input-item{
+        border-radius: 5px;
+    }
+
+    .input-item,
+    .item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding:5% 0;       
+    }
+    
+    .item{
+        display:none;
+        p{
+            font-size: 0.75rem;
+            width:75%;
+        }
+        #cross-img{
+            display:block;
+        }
+    }
+
+    #tick-btn{
+        border-radius: 50%;
+        outline:none;
+        width:20px;
+        height:20px;
+        margin:0 4.5%;
+    }
+
+    #input{
+        outline:none;
+        border:none;   
+        font-size:0.75rem ;
+        width:80%;
+        font-weight: 400;   
+    }
+    
+    #listofitems{
+        margin-top: 5%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        overflow: hidden;
+    }
+    
+    #tick-img{
+        visibility: hidden;
+    }
+
+    .completed{
+        text-decoration:line-through ;
+
+        #tick-img{
+            visibility: visible;
+        }
+    }
+    #cross-img{
+        margin-right: 4%;
+        max-width:50%;
+        width:4%;
+    }
+
+
+    .lastitem{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.75em;
+        padding:6% 4.5%;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;   
+        text-align: center;
+    }
+
+ 
+    .footer{
+        text-align: center;
+        padding:6%;
+        font-size: 0.75em;
+
+    }
+
+    .groupedmobile{
+        border-radius: 5px;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:center;
+        margin:5% auto;
+        padding:5% 0;
+        font-size: 0.8em;
+        width:100%;
+    
+        .footerlinks{
+            padding: 0 4%;
+        }
+    }
+
+    .show{
+        display:flex ;
+    }
+    
+    .show{
+        display:flex ;
+    }
+
+    .footeractive{
+        color:hsl(220, 98%, 61%);;
+    }
+    
+    #listofitems,
+    .lastitem,
+    .input-item{
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    }
+
+}

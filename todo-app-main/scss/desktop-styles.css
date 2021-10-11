@@ -96,7 +96,7 @@ img {
   height: auto;
 }
 
-@media only screen and (min-width: 377px) {
+@media only screen and (min-width: 477px) {
   .item:hover #tick-btn {
     border: 1px solid var(--lightgray);
   }
@@ -295,7 +295,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 1155px) and (min-width: 375px) {
+@media only screen and (max-width: 1155px) and (min-width: 475px) {
   .grouped {
     display: -webkit-box;
     display: -ms-flexbox;

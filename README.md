@@ -15,5 +15,5 @@
 <li>Room homepage: <a href="https://srivarshan12.github.io/webdev/room-homepage-master/">view site</a></li>
 <li>Loopstudios-landing-page: <a href="https://srivarshan12.github.io/webdev/loopstudios-landing-page-main/">view site</a></li>
 <li>Manage-landing-page: <a href="https://srivarshan12.github.io/webdev/manage-landing-page-master/">view site</a></li>
-<li>Todo-app-main: <a href="https://srivarshan12.github.io/webdev/todo-app-main/">view site</a> (desktop only)</li> 
+<li>Todo-app-main: <a href="https://srivarshan12.github.io/webdev/todo-app-main/index.html">view site</a> (desktop only)</li> 
 </ol>

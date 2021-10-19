@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        h1{
+         padding:10px;   
+        }
+        div{
+            padding: 10x;
+        }
+        #play{
+            margin-left:20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Rock paper Scissor</h1>
+    <div class="buttons">
+        <button  id="ROCK">      ROCK</button>
+        <button  id="PAPER">     PAPER</button>
+        <button  id="SCISSOR">   SCISSOR</button>
+        <!-- <button onclick="playfunction()" id="play">play</button> -->
+    
+    </div>
+    <p id="userchoiceparagraph"></p>
+    <p id="computerchoiceparagraph"></p>
+    <span id="result"></span>
+    <div id="userpoint"></div>
+    <span id="computerpoint"></span>
+    
+    <script>
+
+        var cc,user=0,computer=0;
+           $("button").click(function()
+            {
+                var userchoice=this.id;
+
+                document.getElementById("userchoiceparagraph").innerHTML="player choice is: "+userchoice;
+    
+        
+            var computerchoice=Math.random();
+            console.log(computerchoice);
+            if (computerchoice<=0.33)
+            {
+                cc="ROCK";
+            }
+            else if (computerchoice>0.33 && computerchoice<=0.66)
+            {
+                cc="PAPER";
+            }
+            else
+            {
+                cc="SCISSOR";
+            }
+            
+            document.getElementById("computerchoiceparagraph").innerHTML="computer choice is: "+cc;
+            if(userchoice==cc){
+                //console.log="tie";
+                document.getElementById("result").innerHTML="RESULT : TIE";
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user; 
+            }
+            else if(userchoice=="ROCK" && cc=="PAPER"){
+                computer++;
+                document.getElementById("result").innerHTML="RESULT : COMPUTER WINS";
+
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+            else if(userchoice=="ROCK" && cc=="SCISSOR"){
+                user++;
+                document.getElementById("result").innerHTML="RESULT : PLAYER WINS";
+            
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+            else if(userchoice=="PAPER" && cc=="ROCK"){
+                user++;
+                document.getElementById("result").innerHTML="RESULT : PLAYER WINS";
+            
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+            else if(userchoice=="PAPER" && cc=="SCISSOR"){
+                computer++;
+                document.getElementById("result").innerHTML="RESULT : COMPUTER WINS";
+            
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+            else if(userchoice=="SCISSOR" && cc=="PAPER"){
+                user++;
+                document.getElementById("result").innerHTML="RESULT : PLAYER WINS";
+            
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+            else if(userchoice=="SCISSOR" && cc=="ROCK"){
+                computer++;
+                document.getElementById("result").innerHTML="RESULT : COMPUTER WINS";
+            
+                document.getElementById("computerpoint").innerHTML="COMPUTER: "+computer;
+                document.getElementById("userpoint").innerHTML="USER: "+user;
+            }
+
+
+
+        });
+ 
+    </script>
+</body>
+</html>

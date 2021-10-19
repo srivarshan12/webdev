@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissor</title>
+</head>
+<script type="text/javascript">
+
+var playerpoints=0;
+var computerpoints=0;
+var playerchoice;
+var computerrandom;
+
+
+function displaypoints(){
+    document.writeln("\n playerpoints: "+playerpoints);
+    document.writeln("computerpoints: "+computerpoints);    
+}
+//1 rock
+//2 paper
+//3 scissor
+function check(playerchoice,computerrandom){
+if(playerchoice==computerrandom)
+{
+    //points++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+    document.writeln("tie");
+}
+
+else if(playerchoice==1 && (computerrandom==2))
+{
+    
+    document.writeln("player choose rock and computer choose paper \n computer wins");
+    computerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+    
+}
+else if(playerchoice==1 && computerrandom==3){
+    
+    document.writeln("player choose rock and computer choose scissor \n player wins");
+    playerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+}
+else if(playerchoice==2 && computerrandom==1)
+{   document.writeln("player choose paper and computer choose rock \n computer wins");
+    computerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+}
+
+else if(playerchoice==2 && computerrandom==3)
+{   document.writeln("player choose paper and computer choose scissor \n computer wins");
+    computerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+}
+
+else if(playerchoice==3 && computerrandom==1)
+{   document.writeln("player choose scissor and computer choose rock \n computer wins");
+    computerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+}
+
+else if(playerchoice==3 && computerrandom==2)
+{   document.writeln("player choose scissor and computer choose paper \n player wins");
+    playerpoints++;
+    playerchoicefun();
+    //computerrandomfun();
+    displaypoints();
+}
+
+else if(playerchoice==4){
+ //   displaypoints();
+    document.writeln("BYE");    
+}
+}
+
+
+function computerrandomfun(){
+    computerrandom=(Math.random());
+    if(computerrandom<=0.33){
+        computerrandom=1;
+    }
+    else if(computerrandom>0.33 && computerrandom<=0.66){
+        computerrandom=2;
+    }
+    else{
+        computerrandom=3;
+    }
+    
+    document.writeln("computerpoints: "+computerpoints);
+    check(playerchoice,computerrandom);
+}
+
+function playerchoicefun(){    
+    playerchoice= parseInt(window.prompt("enter 1 for rock \n enter 2 for paper \n enter 3 for scissor \n enter 4 for quit"));
+    document.writeln("playerpoints: "+playerpoints);
+    computerrandomfun();
+}
+playerchoicefun();
+//computerrandomfun();
+//displaypoints();
+
+</script>
+<body>
+    
+</body>
+</html>

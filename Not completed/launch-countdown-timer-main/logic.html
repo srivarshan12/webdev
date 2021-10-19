@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <p id="a"></p>
+        <p id="b"></p>
+
+    <script>
+        //var month=window.prompt("month");
+        var date=window.prompt("date");
+        //var year=window.prompt("year");
+        var hr=window.prompt("Enter Hour 1-24");
+        var min=window.prompt("minutes");
+        var sec=window.prompt("seconds");
+
+        //let countDownDate=new Date(month date ,year hr:min:sec).getTime();
+        let countDownDate=new Date();
+        countDownDate.setDate(date);
+        countDownDate.setMinutes(min);
+        countDownDate.setHours(hr);
+        countDownDate.setSeconds(sec);
+
+        let x=setInterval(function(){
+            let now=new Date().getTime();
+            var b=document.getElementById("b");
+            b.innerHTML=new Date();
+            let timeLeft=countDownDate-now;
+            const days  = Math.floor(timeLeft/(1000*60*60*24));
+            const hours = Math.floor((timeLeft/(1000*60*60))%24);
+            const minutes=Math.floor((timeLeft/1000/60)%60);
+            const seconds=Math.floor((timeLeft/1000)%60);
+            var a=document.getElementById("a");
+            a.innerHTML=days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            console.log(days + "d " + hours + "h " + minutes + "m " + seconds + "s ");
+
+            // clearing countdown when complete
+            if (timeLeft < 0) {
+                clearInterval(x);
+                a.innerHTML="Boom!!";
+                console.log('CountDown Finished');
+            }
+
+        },1000);
+    </script>
+</body>
+</html>

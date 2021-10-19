@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: aqua;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  Score
+<button onclick="showimage()">Rules</button>  
+<script>
+  function showimage(){
+    document.getElementById("rulesimage").style.visibility="visible";
+
+  }
+</script>
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+<img src="images/icon-paper.svg">
+<img src="images/icon-rock.svg">
+<img src="images/icon-scissors.svg">
+<img src="images/image-rules.svg" id="rulesimage" style="visibility: hidden;">
+<img src="images/bg-triangle.svg">
+<img src="images/logo.svg">
+<img src="images/icon-close.svg" id="iconcloseimage" style="visibility: hidden;">
+<button>Play Again</button>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">K N SRIVARSHAN</a>.
+  </div>
+</body>
+</html>
